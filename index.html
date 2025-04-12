@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Daily Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>📝 My Daily Tasks</h2>
+    <div class="input-section">
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('done')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+      </div>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
